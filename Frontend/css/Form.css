@@ -1,0 +1,73 @@
+
+form{
+    margin:0 auto;
+    max-width:100%;
+    padding:40px; 
+  }
+  .label{
+    font-family: 'Open Sans', Sans-Serif;
+    font-size:20px;
+  }
+
+  .textbox{
+    height:30px;
+    width:100%;
+    border-radius:3px;
+    border:rgba(37, 61, 99,0.6) 1px solid;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px; 
+    padding:20px;
+    margin-bottom:20px;  
+  }
+  .textbox:focus{
+    outline:none;
+     border:#217AA7 1px solid;
+     color:#217AA7
+  }
+  .select{
+    height:40px;
+    width:100%;
+    border-radius:3px;
+    border:rgba(37, 61, 99,0.6) 1px solid;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+    padding:0 0 0 20px;
+    margin-bottom:20px;
+  }
+
+  .select:focus{
+    border:#217AA7 1px solid;
+    color:#217AA7
+ }
+
+  .button{
+    height:40px;
+    width:100%;
+    border-radius:3px;
+    border:rgba(0,0,0,.3) 0px solid;
+    box-sizing:border-box;
+    padding:10px;
+    background:rgba(128, 180, 56, 0.7);
+    color:#FFF;
+    font-family: 'Open Sans', sans-serif;  
+    font-weight:400;
+    font-size: 16pt;
+    text-align: center;
+    transition:background .4s;
+    cursor:pointer;
+    margin-bottom:20px; 
+  }
+  
+  .button:hover{
+    background:rgb(128, 180, 56);
+  }
+
+  .button_clear{
+    background:rgba(123, 180, 228, 0.7);
+  }
+
+  .button_clear:hover{
+    background:#7BB4E4;
+  }

@@ -1,0 +1,76 @@
+{
+  "departments": [
+    {
+      "name": "Департамент разработки",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Департамент маркетинга"
+    },
+    {
+      "id": 3,
+      "name": "Департамент внедрения"
+    },
+    {
+      "id": 4,
+      "name": "Отдел дизайна"
+    },
+    {
+      "id": 5,
+      "name": "Отдел PR и рекламы"
+    },
+    {
+      "id": 6,
+      "name": "Отдел тестирования"
+    },
+    {
+      "id": 7,
+      "name": "Отдел сопровождения"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Александр",
+      "lastName": "Козлов",
+      "departmentId": 1
+    },
+    {
+      "id": 2,
+      "firstName": "Иван",
+      "lastName": "Иванов",
+      "departmentId": 1
+    },
+    {
+      "id": 3,
+      "firstName": "Валерия",
+      "lastName": "Федорова",
+      "departmentId": 4
+    },
+    {
+      "id": 4,
+      "firstName": "Виктор",
+      "lastName": "Васин",
+      "departmentId": 5
+    },
+    {
+      "firstName": "Анастасия",
+      "lastName": "Егужинская",
+      "id": 5,
+      "departmentId": 2
+    },
+    {
+      "firstName": "Алексей",
+      "lastName": "Семенов",
+      "departmentId": 4,
+      "id": 6
+    },
+    {
+      "id": 7,
+      "firstName": "Станислав",
+      "lastName": "Великий",
+      "departmentId": 6
+    }
+  ]
+}

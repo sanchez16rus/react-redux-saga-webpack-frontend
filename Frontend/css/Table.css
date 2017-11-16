@@ -1,0 +1,110 @@
+.tableGrouping {
+    min-height: 600px
+}
+
+.tableList {
+    font-family: 'Open Sans', Sans-Serif;
+    font-size: 17px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-spacing: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.tableList th {
+    background: #AFCDE7;
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+}
+
+.tableList th {
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: white;
+}
+
+.tableList td {
+    border-style: solid;
+    border-width: 1px 1px 0px 0px;
+    border-color: white;
+}
+
+.tableList td:last-child {
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: white;
+}
+
+.tableList th:first-child, td:first-child {
+    text-align: left;
+}
+.tableList th:first-child {
+    border-top-left-radius: 10px;
+}
+.tableList th:last-child {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+.tableList td {
+    padding: 10px 20px;
+}
+
+.tr_editing {
+   background: rgba(37, 61, 99, 0.7);
+   font-size: 18px;
+   color: white;
+}
+
+.td_action {
+    cursor: pointer;
+    width: 50px;
+}
+
+.td_id {
+    width: 30px;
+}
+
+.td_delete {
+    color:#6398C4;
+}
+
+.td_delete:hover {
+    background: rgba(255, 0, 0, 0.4);
+    color:white;
+}
+
+.td_edit {
+    color:#6398C4;
+}
+.td_edit:hover {
+    background: rgba(129, 191, 241, 0.7);
+    color:white;
+}
+
+.table-groupp-td-grid {
+    width:auto;
+    vertical-align: top;
+}
+
+.table-groupp-td-edit {
+    vertical-align: top;
+    width:25%
+}
+
+.tableEdit {
+    margin: 0 0 0 3px;
+    min-height: 300px;
+}
+
+.tableEdit th {
+    background: rgba(37, 61, 99,0.6);
+    color: white;
+    padding: 10px 20px;
+}
+
+
+    

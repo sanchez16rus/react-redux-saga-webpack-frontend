@@ -1,0 +1,14 @@
+{
+  "name": "backend_json_server",
+  "version": "1.0.0",
+  "description": "16.11.2017. Backend for REST API",
+  "main": "index.js",
+  "scripts": {
+    "json-srv": "json-server --watch db.json"
+  },
+  "author": "Aleksandr Kozlov",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.12.1"
+  }
+}
