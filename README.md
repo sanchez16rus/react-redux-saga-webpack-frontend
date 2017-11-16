@@ -1,18 +1,19 @@
-# react-redux-saga-webpack-frontend
-React + React-Redux + React-Saga + Webpack + Json-Server  
+React + Redux + Redux-Saga + Webpack frontend 
 
-1. Start backend json-server
+## Getting started
 
-> cd JsonServer
-> npm install
-> npm run json-srv
+1. Make sure you have node.js installed. Grab it here if you don't: [nodejs installer](https://nodejs.org/en/download/).
+2. clone repository (https://github.com/sanchez16rus/react-redux-saga-webpack-frontend.git)
+2. cd into JsonServer
+3. run 'npm install'
+4. run 'npm run json-srv'
 
-...The mock server will start on http://localhost:3000/
+## Starting frontend
+1. cd into Frontend
+2. run 'npm install'
+3. run 'npm run dev'
 
-2. Start frontend
+json-server will start on http://localhost:3000/
+frontend will start on http://localhost:8080/
 
-> cd Frontend
-> npm install
-> npm run dev
-
-... The frontend will start on http://localhost:8080/
+Good luck!
