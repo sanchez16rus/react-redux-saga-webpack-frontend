@@ -28,7 +28,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-           title: 'Developers And Employees',
+           title: 'Departments And Employees',
            template: 'index.html',
         })
     ]

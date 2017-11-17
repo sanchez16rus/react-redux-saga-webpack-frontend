@@ -1,0 +1,8 @@
+
+#Ignore thumbnails created by Windows
+Thumbs.db
+#Ignore files built by Visual Studio
+.vs/
+#node_modules
+JsonServer/node_modules/
+Frontend/node_modules/
