@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import '../../css/Table.css';
 import '../../css/Form.css';
-import {createDepartmentAction, updateDepartmentAction, clearDepartmentSingleAction} from '../actions/actions';
+import DepartmentActions from '../actions/deparmentActions';
 
 class DepartmentEdit extends Component {
 
@@ -22,15 +22,15 @@ class DepartmentEdit extends Component {
 
     if(department && department.id > 0)
     {
-      this.props.dispatch(updateDepartmentAction(department));
+      this.props.dispatch(DepartmentActions.updateDepartmentAction(department));
     }
     else{
-      this.props.dispatch(createDepartmentAction(department));
+      this.props.dispatch(DepartmentActions.createDepartmentAction(department));
     }
   }
 
   handleClearClick(e) {
-    this.props.dispatch(clearDepartmentSingleAction());
+    this.props.dispatch(DepartmentActions.clearDepartmentSingleAction());
   }
 
   onChangeName(e) {

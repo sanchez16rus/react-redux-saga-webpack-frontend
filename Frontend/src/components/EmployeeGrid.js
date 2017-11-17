@@ -3,20 +3,20 @@ import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import EmployeeEdit from './EmployeeEdit';
 
-import {getEmployeeListAction, deleteEmployeeAction, getEmployeeSingleAction} from '../actions/actions';
+import EmployeeActions from '../actions/employeeActions';
 import '../../css/Table.css';
 class EmployeeGrid extends Component {
 
   componentWillMount() {
-    this.props.dispatch(getEmployeeListAction());
+    this.props.dispatch(EmployeeActions.getEmployeeListAction());
   }
 
   handleEditClick(value) {
-    this.props.dispatch(getEmployeeSingleAction(value));
+    this.props.dispatch(EmployeeActions.getEmployeeSingleAction(value));
   }
 
   handleDeleteClick(value) {
-    this.props.dispatch(deleteEmployeeAction(value.id));
+    this.props.dispatch(EmployeeActions.deleteEmployeeAction(value.id));
   }
 
   render() {

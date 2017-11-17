@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import '../../css/Table.css';
 import '../../css/Form.css';
-import {createEmployeeAction, updateEmployeeAction, clearEmployeeSingleAction} from '../actions/actions';
+import EmployeeActions from '../actions/employeeActions';
 
 class EmployeeEdit extends Component {
 
@@ -39,7 +39,7 @@ class EmployeeEdit extends Component {
     }
 
     handleClearClick(e) {
-        this.props.dispatch(clearEmployeeSingleAction());
+        this.props.dispatch(EmployeeActions.clearEmployeeSingleAction());
       }
 
     handlerFormSubmit(e) {
@@ -48,10 +48,10 @@ class EmployeeEdit extends Component {
 
         if(employee && employee.id > 0)
         {
-          this.props.dispatch(updateEmployeeAction(employee));
+          this.props.dispatch(EmployeeActions.updateEmployeeAction(employee));
         }
         else{
-          this.props.dispatch(createEmployeeAction(employee));
+          this.props.dispatch(EmployeeActions.createEmployeeAction(employee));
         }
       }
 

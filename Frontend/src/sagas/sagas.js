@@ -1,24 +1,11 @@
 import axios from 'axios';
 import { takeEvery, call, put } from 'redux-saga/effects';
-import Constants from '../consts/consts';
+import Constants from '../consts';
 
 const urlConfig = () => ({
     departmentsUrl: 'http://localhost:3000/departments',
     employeesUrl: 'http://localhost:3000/employees'
 });
-
-/*SET_NAVIGATION_ITEM*/
-export function* setNavigationItemAsync(action) {
-  try {
-    yield put({ type: Constants.SET_NAVIGATION_ITEM_SUCCEEDED, payload: action.payload });
-  } catch (e) {
-    yield put({ type: Constants.SET_NAVIGATION_ITEM_FAILED, payload: e.message });
-  }
-}
-  
-export function* watchSetNavigationItem() {
-  yield takeEvery(Constants.SET_NAVIGATION_ITEM, setNavigationItemAsync);
-}
 
 /*GET_DEPARTMENT*/
 export function* getDepartmentSingleAsync(action) {
@@ -79,6 +66,9 @@ export function* getDepartmentListAsync() {
   try {
     const response = yield call(axios.get, urlConfig().departmentsUrl);
     yield put({ type: Constants.GET_LIST_DEPARTMENT_SUCCEEDED, payload: response.data });
+
+    // Отправляю дополнительно CLEAR для объекта редактирования Department, поскольку после обновления списка объект мог быть удален и его не будет в списке 
+    yield put({ type: Constants.CLEAR_DEPARTMENT });
   } catch (e) {
     yield put({ type: Constants.GET_LIST_DEPARTMENT_FAILED, payload: e.message });
   }
@@ -138,6 +128,9 @@ export function* getEmployeeListAsync() {
   try {
     const response = yield call(axios.get, urlConfig().employeesUrl);
     yield put({ type: Constants.GET_LIST_EMPLOYEE_SUCCEEDED, payload: response.data });
+
+    // Отправляю дополнительно CLEAR для объекта редактирования Department, поскольку после обновления списка объект мог быть удален и его не будет в списке 
+    yield put({ type: Constants.CLEAR_EMPLOYEE });
   } catch (e) {
     yield put({ type: Constants.GET_LIST_EMPLOYEE_FAILED, payload: e.message });
   }
@@ -189,24 +182,3 @@ export function* deleteEmployeeAsync(action) {
 export function* watchDeleteEmployee() {
   yield takeEvery(Constants.DELETE_EMPLOYEE, deleteEmployeeAsync);
 }
-
-
-/*ROOT SAGE*/
-export default function* rootSaga() {
-    yield [
-        watchSetNavigationItem(),
-        watchGetDepartmentList(),
-        watchCreateDepartment(),
-        watchUpdateDepartment(),
-        watchDeleteDepartment(),
-        watchGetEmployeeList(),
-        watchCreateEmployee(),
-        watchUpdateEmployee(),
-        watchDeleteEmployee(),
-        watchGetEmployeeSingle(),
-        watchClearEmployeeSingle(),
-        watchGetDepartmentSingle(),
-        watchClearDepartmentSingle()
-    ];
-  }
-  

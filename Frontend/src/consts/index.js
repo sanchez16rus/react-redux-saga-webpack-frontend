@@ -1,8 +1,4 @@
-const Constants = {
-    SET_NAVIGATION_ITEM: 'Set_Navigation_Item', // Проставление текущего пункта меню
-    SET_NAVIGATION_ITEM_SUCCEEDED: 'Set_Navigation_Item_Succeeded', // Успех
-    SET_NAVIGATION_ITEM_FAILED: 'Set_Navigation_Item_Failed', // Ошибка
-    
+export default {   
     GET_LIST_DEPARTMENT: 'Get_List_Department', // Получение списка департаментов
     GET_LIST_DEPARTMENT_SUCCEEDED: 'Get_List_Department_Succeeded', // Успех
     GET_LIST_DEPARTMENT_FAILED: 'Get_List_Department_Failed', // Ошибка
@@ -51,5 +47,3 @@ const Constants = {
     DELETE_EMPLOYEE_SUCCEEDED: 'Delete_Employee_Succeeded', // Успех
     DELETE_EMPLOYEE_FAILED: 'Delete_Employee_Failed' // Ошибка
 }
-
-export default Constants

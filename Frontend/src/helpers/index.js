@@ -1,5 +1,5 @@
 /*Functions to help*/
-export const changeItemInArray = (mass, changeItem) => { 
+const changeItemInArray = (mass, changeItem) => { 
   return mass.map( (item) => {
     if(item.id !== changeItem.id) {
       return item;
@@ -9,20 +9,20 @@ export const changeItemInArray = (mass, changeItem) => {
   });
 }
   
-export const removeItemFromArray = (mass, id) => { 
+const removeItemFromArray = (mass, id) => { 
   return mass.filter(function( item ) {
     return item.id !== id;
   }); 
 }
 
-export const getNewDepartment = () => { 
+const getNewDepartment = () => { 
   return {
     id: 0,
     name: ''
   };
 }
 
-export const getNewEmployee = () => { 
+const getNewEmployee = () => { 
   return {
     id: 0,
     firstName: '',
@@ -30,4 +30,10 @@ export const getNewEmployee = () => {
     departmentId: 0
   };
 }
-  
+
+export default {
+  changeItemInArray,
+  removeItemFromArray,
+  getNewDepartment,
+  getNewEmployee
+}

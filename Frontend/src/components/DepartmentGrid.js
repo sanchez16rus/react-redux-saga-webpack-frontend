@@ -3,21 +3,21 @@ import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import DepartmentEdit from './DepartmentEdit';
 
-import {getDepartmentListAction, deleteDepartmentAction, getDepartmentSingleAction} from '../actions/actions';
+import DepartmentActions from '../actions/deparmentActions';
 import '../../css/Table.css';
 
 class DepartmentGrid extends Component {
 
   componentWillMount() {
-    this.props.dispatch(getDepartmentListAction());
+    this.props.dispatch(DepartmentActions.getDepartmentListAction());
   }
 
   handleEditClick(value) {
-    this.props.dispatch(getDepartmentSingleAction(value));
+    this.props.dispatch(DepartmentActions.getDepartmentSingleAction(value));
   }
 
   handleDeleteClick(value) {
-    this.props.dispatch(deleteDepartmentAction(value.id));
+    this.props.dispatch(DepartmentActions.deleteDepartmentAction(value.id));
   }
 
   render() {
