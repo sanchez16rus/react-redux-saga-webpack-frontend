@@ -1,57 +1,57 @@
 {
   "departments": [
     {
-      "name": "Департамент разработки",
+      "name": "Development Department",
       "id": 1
     },
     {
       "id": 2,
-      "name": "Департамент маркетинга"
+      "name": "Marketing Department"
     },
     {
       "id": 3,
-      "name": "Департамент внедрения"
+      "name": "Sales Department"
     },
     {
       "id": 4,
-      "name": "Отдел дизайна"
+      "name": "Design Department"
     },
     {
       "id": 5,
-      "name": "Отдел PR и рекламы"
+      "name": "PR Department"
     },
     {
       "id": 6,
-      "name": "Отдел тестирования"
+      "name": "Testing Department"
     },
     {
       "id": 7,
-      "name": "Отдел сопровождения"
+      "name": "Maintenance Department"
     }
   ],
   "employees": [
     {
       "id": 1,
-      "firstName": "Александр",
-      "lastName": "Козлов",
+      "firstName": "Aleksandr",
+      "lastName": "Kozlov",
       "departmentId": 1
     },
     {
       "id": 2,
-      "firstName": "Иван",
-      "lastName": "Иванов",
+      "firstName": "Ivan",
+      "lastName": "Smith",
       "departmentId": 1
     },
     {
       "id": 3,
-      "firstName": "Валерия",
-      "lastName": "Федорова",
+      "firstName": "Valery",
+      "lastName": "Thompson",
       "departmentId": 4
     },
     {
       "id": 4,
-      "firstName": "Виктор",
-      "lastName": "Васин",
+      "firstName": "John",
+      "lastName": "McCain",
       "departmentId": 5
     },
     {
@@ -61,16 +61,16 @@
       "departmentId": 2
     },
     {
-      "firstName": "Алексей",
-      "lastName": "Семенов",
+      "firstName": "Hillary",
+      "lastName": "Clinton",
       "departmentId": 4,
       "id": 6
     },
     {
       "id": 7,
-      "firstName": "Станислав",
-      "lastName": "Великий",
-      "departmentId": 6
+      "firstName": "Angela",
+      "lastName": "Merkel",
+      "departmentId": 4
     }
   ]
 }
