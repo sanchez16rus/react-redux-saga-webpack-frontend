@@ -3,9 +3,9 @@ React + Redux + Redux-Saga + Webpack frontend
 used in project mockserver: [json-server](https://github.com/typicode/json-server)
 
 ## Frontend design
-
-!["frontend design"](../Frontend/img/face.png)
-
+<br/>
+<img src="https://github.com/sanchez16rus/react-redux-saga-webpack-frontend/blob/master/Frontend/img/face.png" />
+<br/>
 
 ## Getting started
 
